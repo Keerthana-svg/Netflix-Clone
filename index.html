@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Netflix Clone</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Background Video -->
+  <div class="video-background">
+    <video autoplay loop muted playsinline>
+      <source src="dragon.mp4" type="video/mp4" />
+    </video>
+    <div class="content">
+      <img src="movie.png" alt="Movie Title" class="title-img" />
+      <p>The "How to Train Your Dragon" movie is a popular animated fantasy film produced by DreamWorks Animation and based on the book series by Cressida Cowell.</p>
+      <div class="buttons">
+        <button class="btn play">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="24px" height="24px"><path d="M8 5v14l11-7z"></path></svg>
+          Play
+        </button>
+        <button class="btn more-info">
+          <svg viewBox="0 0 50 50" width="24px" height="24px"><path d="M 25 2 C 12.3 2 2 12.3 2 25s10.3 23 23 23 23-10.3 23-23S37.7 2 25 2zM25 11a3 3 0 100 6 3 3 0 000-6zm-4 10h8v17h-8z"/></svg>
+          More Info
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="left-nav">
+      <a href="/browse" class="logo"><img src="bg.png" alt="Netflix Logo" /></a>
+      <ul class="navigation">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">TV Shows</a></li>
+        <li><a href="#">Movies</a></li>
+        <li><a href="#">New & Popular</a></li>
+        <li><a href="#">My List</a></li>
+        <li><a href="#">Browse by Languages</a></li>
+      </ul>
+    </div>
+    <div class="right-nav">
+      <button class="icon-search" aria-label="Search">
+        <svg viewBox="0 0 512 512" width="24" height="24"><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0s208 93.1 208 208zM208 352a144 144 0 100-288 144 144 0 000 288z"/></svg>
+      </button>
+      <a >Children</a>
+      <button class="icon-bell" aria-label="Notifications">
+        <svg viewBox="0 0 512 512" width="24" height="24"><path d="M224 0c-17.7 0-32 14.3-32 32V51.2C119 66 64 130.6 64 208v25.4c0 45.4-15.5 89.5-43.8 124.9L5.3 377c-5.8 7.2-6.9 17.1-2.9 25.4S14.8 416 24 416H424c9.2 0 17.6-5.3 21.6-13.6s2.9-18.2-2.9-25.4l-14.9-18.6C399.5 322.9 384 278.8 384 233.4V208c0-77.4-55-142-128-156.8V32c0-17.7-14.3-32-32-32zm64 448H160c0 17 6.7 33.3 18.7 45.3s28.3 18.7 45.3 18.7 33.3-6.7 45.3-18.7S288 465 288 448z"/></svg>
+        <span class="notification-count">3</span>
+      </button>
+      <div class="profile">
+        <img src="userprofile.png" alt="User Profile" class="profile-pic" />
+        <div class="dropdown">
+          <ul class="dropdown-menu">
+            <li><a href="#">Account</a></li>
+            <li><a href="#">Help Center</a></li>
+            <li class="separator"></li>
+            <li><a href="#">Sign Out</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Movie Section -->
+  <div class="movie-section">
+    <h2>Popular on Netflix</h2>
+    <div class="movie-row">
+      <img src="movie1.jpg" alt="Movie 1" />
+      <img src="movie2.jpg" alt="Movie 2" />
+      <img src="movie3.jpg" alt="Movie 3" />
+      <img src="movie4.jpg" alt="Movie 4" />
+      <img src="movie5.jpg" alt="Movie 5" />
+      <img src="movie6.jpg" alt="Movie 6" />
+      <img src="movie7.jpg" alt="Movie 7" />
+      <img src="movie8.jpg" alt="Movie 8" />
+      <img src="movie9.jpg" alt="Movie 9" />
+      <img src="movie10.jpg" alt="Movie 10" />
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
